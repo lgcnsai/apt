@@ -33,32 +33,46 @@ export const components = {pre: CodeBlock, table: Table}
   title={frontmatter.title}
   authors={[
     {
-      name: "Roman Hauksson",
+      name: "Jungwoo Chae",
       url: "https://roman.technology",
-      institution: "Independent",
-      notes: ["*"],
+      notes: ["1*"],
     },
     {
-      name: "Author Two",
-      institution: "Institution Two",
-      notes: ["*"],
+      name: "Jiyoon Kim",
+      notes: ["1*"],
     },
     {
-      name: "Author Three",
-      institution: "Institution Three",
+      name: "Jaewoong Choi",
+      notes: ["1"],
     },
     {
-      name: "Author Four",
-      institution: "Institution Four",
+      name: "Kyungyul Kim",
+      notes: ["1"],
+    },
+    {
+      name: "Sangheum Hwang",
+      notes: ["2†"],
     },
   ]}
   conference="Conference Name"
-  notes={[
-    {
-      symbol: "*",
-      text: "author note one",
+  notes={
+    [{
+      symbol: "1",
+      text: "LG CNS AI Research",
     },
-  ]}
+    {
+      symbol: "2",
+      text: "Department of Data Science, Seoul National University of Science and Technology",
+    }],
+    [{
+      symbol: "*",
+      text: "Equal contribution",
+    },
+    {
+      symbol: "†",
+      text: "Corresponding author",
+    }]
+  }
   links={[
     {
       name: "Paper",
