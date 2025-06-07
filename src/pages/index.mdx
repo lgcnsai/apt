@@ -34,37 +34,30 @@ export const components = {pre: CodeBlock, table: Table}
   authors={[
     {
       name: "Jungwoo Chae",
-      url: "https://roman.technology",
-      notes: ["1*"],
+      institution: "Nexon Korea",
+      notes: ["*"],
     },
     {
       name: "Jiyoon Kim",
-      notes: ["1*"],
+      url: "",
+      institution: "LG CNS AI Research",
+      notes: ["*"],
     },
     {
       name: "Jaewoong Choi",
-      notes: ["1"],
+      institution: "LG CNS AI Research",
     },
     {
       name: "Kyungyul Kim",
-      notes: ["1"],
+      institution: "LG CNS AI Research",
     },
     {
       name: "Sangheum Hwang",
-      notes: ["2†"],
+      institution: "Department of Data Science, Seoul National University of Science and Technology",
+      notes: ["†"],
     },
   ]}
-  conference="Conference Name"
-  institutions={[
-    {
-      symbol: "1",
-      text: "LG CNS AI Research",
-    },
-    {
-      symbol: "2",
-      text: "Department of Data Science, Seoul National University of Science and Technology",
-    }
-  ]}
+  conference="CVPR 2025 Main Conference"
   notes={[
     {
       symbol: "*",
@@ -77,25 +70,10 @@ export const components = {pre: CodeBlock, table: Table}
   ]}
   links={[
     {
-      name: "Paper",
-      url: "",
-      icon: "ri:file-pdf-2-line",
-    },
-    {
-      name: "Code",
-      url: "https://github.com/RomanHauksson/academic-project-astro-template",
-      icon: "ri:github-line",
-    },
-    {
       name: "arXiv",
       url: "",
       icon: "academicons:arxiv",
     },
-    {
-      name: "Bluesky",
-      url: "",
-      icon: "ri:bluesky-line"
-    }
   ]}
   />
 
@@ -105,7 +83,7 @@ export const components = {pre: CodeBlock, table: Table}
 
 ## Abstract
 
-This is a live demo for a template you can use to create a simple project page for your research paper. See the code for the template and instructions on how to use it yourself [here](https://github.com/RomanHauksson/academic-project-astro-template). It's made with the [Astro web framework](https://astro.build/) and styled with [Tailwind CSS](https://tailwindcss.com/). You write the content in [MDX](https://mdxjs.com/), which enables markdown formatting like **bold**, _italics_, and ~strikethrough~, as well as custom components like <SmallCaps>small caps.</SmallCaps>
+Personalizing diffusion models using limited data presents significant challenges, including overfitting, loss of prior knowledge, and degradation of text alignment. Overfitting leads to shifts in the noise prediction distribution, disrupting the denoising trajectory and causing the model to lose semantic coherence. In this paper, we propose \textbf{Adaptive Personalized Training (\ours)}, a novel framework that mitigates overfitting by employing adaptive training strategies and regularizing the model's internal representations during fine-tuning. APT consists of three key components: (1) \textbf{Adaptive Training Adjustment}, which introduces an overfitting indicator to detect the degree of overfitting at each time step bin and applies adaptive data augmentation and adaptive loss weighting based on this indicator; (2) \textbf{Representation Stabilization}, which regularizes the mean and variance of intermediate feature maps to prevent excessive shifts in noise prediction; and (3) \textbf{Attention Alignment for Prior Knowledge Preservation}, which aligns the cross-attention maps of the fine-tuned model with those of the pretrained model to maintain prior knowledge and semantic coherence. Through extensive experiments, we demonstrate that \ours \ effectively mitigates overfitting, preserves prior knowledge, and outperforms existing methods in generating high-quality, diverse images with limited reference data.
 
 </HighlightedSection>
 
