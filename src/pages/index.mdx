@@ -61,7 +61,7 @@ export const components = {pre: CodeBlock, table: Table}
     {
       number: 1,
       name: "LG CNS AI Research"
-    }
+    },
     {
       number: 2,
       name: "Department of Data Science, Seoul National University of Science and Technology"
@@ -87,8 +87,10 @@ export const components = {pre: CodeBlock, table: Table}
   ]}
   />
 
-<Image source={teaser} altText="" />
-<span slot="caption">**Given a few reference images, APT personalizes diffusion models with less overfitting**: (Left) By comparing diffusion trajectories using the score matching loss, we observe that our method maintains the original denoising path. The predicted <LaTeX inline formula="\mathbf{x}_0" /> images from APT closely resemble SDXL (prior) during early steps, preserving the overall layout and scene context. (Right) APT effectively incorporates contextual elements from the prior, such as generating a backpack with a person without explicitly mentioning person and preserves stylistic elements like comic book aesthetics. In contrast, other methods either focus excessively on reference images or fail to maintain the prior's style. This demonstrates that APT successfully maintains the pretrained model's capabilities for text alignment and stylization.</span>
+<Figure>
+  <Image source={teaser} altText="" />
+  <span slot="caption">**Given a few reference images, APT personalizes diffusion models with less overfitting**: (Left) By comparing diffusion trajectories using the score matching loss, we observe that our method maintains the original denoising path. The predicted <LaTeX inline formula="\mathbf{x}_0" /> images from APT closely resemble SDXL (prior) during early steps, preserving the overall layout and scene context. (Right) APT effectively incorporates contextual elements from the prior, such as generating a backpack with a person without explicitly mentioning person and preserves stylistic elements like comic book aesthetics. In contrast, other methods either focus excessively on reference images or fail to maintain the prior's style. This demonstrates that APT successfully maintains the pretrained model's capabilities for text alignment and stylization.</span>
+</Figure>
 
 <HighlightedSection>
 
