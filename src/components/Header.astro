@@ -14,7 +14,7 @@ interface Props {
   links: Link[];
 }
 
-const { title, authors, institutions, conference, notes, links } = Astro.props as Props;
+const { title, authors, institutions, notes, conference, links } = Astro.props as Props;
 ---
 
 <header class="flex flex-col gap-10 items-center mb-6">
@@ -22,8 +22,8 @@ const { title, authors, institutions, conference, notes, links } = Astro.props a
   <div class="flex flex-col gap-6 items-center">
     <Authors authors={authors} />
     <Institutions institutions={institutions} />
-    {conference && <p class="text-center">{conference}</p>}
     {notes && <Notes notes={notes} />}
+    {conference && <p class="text-center">{conference}</p>}
     {links && <Links links={links} />}
   </div>
 </header>
