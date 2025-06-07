@@ -42,20 +42,20 @@ export const components = {pre: CodeBlock, table: Table}
     {
       name: "Jiyoon Kim",
       url: "",
-      institution: "LG CNS AI Research",
+      institution: "LG CNS",
       notes: ["*"],
     },
     {
       name: "Jaewoong Choi",
-      institution: "LG CNS AI Research",
+      institution: "LG CNS",
     },
     {
       name: "Kyungyul Kim",
-      institution: "LG CNS AI Research",
+      institution: "LG CNS",
     },
     {
       name: "Sangheum Hwang",
-      institution: "Department of Data Science, Seoul National University of Science and Technology",
+      institution: "Seoul National University of Science and Technology",
       notes: ["†"],
     },
   ]}
@@ -79,7 +79,8 @@ export const components = {pre: CodeBlock, table: Table}
   ]}
   />
 
-<Image source={teaser} altText="$\textbf{Given a few reference images, APT personalizes diffusion models with less overfitting}$: (Left) By comparing diffusion trajectories using the score matching loss, we observe that our method maintains the original denoising path. The predicted $\mathbf{x}_0$ images from APT closely resemble SDXL (prior) during early steps, preserving the overall layout and scene context. (Right) APT effectively incorporates contextual elements from the prior, such as generating a backpack with a person without explicitly mentioning ``person'' and preserves stylistic elements like comic book aesthetics. In contrast, other methods either focus excessively on reference images or fail to maintain the prior's style. This demonstrates that APT successfully maintains the pretrained model's capabilities for text alignment and stylization." />
+<Image source={teaser} altText="" />
+<span slot="caption">**Given a few reference images, APT personalizes diffusion models with less overfitting**: (Left) By comparing diffusion trajectories using the score matching loss, we observe that our method maintains the original denoising path. The predicted $\mathbf{x}_0$ images from APT closely resemble SDXL (prior) during early steps, preserving the overall layout and scene context. (Right) APT effectively incorporates contextual elements from the prior, such as generating a backpack with a person without explicitly mentioning person and preserves stylistic elements like comic book aesthetics. In contrast, other methods either focus excessively on reference images or fail to maintain the prior's style. This demonstrates that APT successfully maintains the pretrained model's capabilities for text alignment and stylization.</span>
 
 <HighlightedSection>
 
