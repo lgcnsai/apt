@@ -20,6 +20,13 @@ const { authors } = Astro.props;
           ) : (
             author.name
           )}
+          {author.institution && (
+            <sup class="text-xl">
+              {Array.isArray(author.institution)
+                ? author.institution.join(",")
+                : author.institution}
+            </sup>
+          )}
           {author.notes && (
             <sup class="text-xl">
               {author.notes.map(
@@ -29,7 +36,6 @@ const { authors } = Astro.props;
             </sup>
           )}
         </span>
-        {author.institution && <p>{author.institution}</p>}
       </div>
     ))
   }
