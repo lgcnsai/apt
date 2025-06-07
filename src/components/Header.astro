@@ -19,11 +19,11 @@ const { title, authors, institutions, notes, conference, links } = Astro.props a
 
 <header class="flex flex-col gap-10 items-center mb-6">
   <h1>{title}</h1>
-  <div class="flex flex-col gap-6 items-center">
+  <div class="flex flex-col gap-4 items-center">
     <Authors authors={authors} />
     <Institutions institutions={institutions} />
     {notes && <Notes notes={notes} />}
-    {conference && <p class="text-center">{conference}</p>}
+    {conference && <p class="text-center text-xl font-semibold">{conference}</p>}
     {links && <Links links={links} />}
   </div>
 </header>
